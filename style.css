@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  border-bottom: 4px solid chocolate;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.searchForm {background: #A3D0C3;}
+.searchForm input {
+  width: 200px;
+  height: 32px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: auto;
+  background: white;
+  color: #9E9C9C;
+}
+.searchForm button {
+  width: 40px;
+  border: none;
+  background: chocolate;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: auto;
+}
+.searchForm button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+form {
+  display: flex;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.imageWrapper {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.img {
+  width: 380px;
+  height: 214px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  border-top: 4px solid chocolate;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.GHIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.rssIcon {
+  width: 62px;
+}
+
+
+.gitHubContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.GHlogin,
+.yearDiv {
+  width: fit-content;
+  height: fit-content;
+}
+
+.login,
+.year {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 320%;
+  text-align: center;
+  color: #a6899e;
+  height: 15px;
+}
+
+.GitHubImg {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.rsschoolIcon {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+}
+
+a {
+  height: 60px;
+}
