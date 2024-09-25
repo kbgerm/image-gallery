@@ -1,5 +1,6 @@
 const url = 'https://media.wired.com/photos/65382632fd3d190c7a1f5c68/16:9/w_2400,h_1350,c_limit/Google-Image-Search-news-Gear-GettyImages-824179306.jpg';
 const imageWrapper = document.querySelector('.imageWrapper');
+const searchButton = document.querySelector('.searchButton');
 
 const images = [
   {
@@ -57,9 +58,11 @@ function makeImg(images) {
     img.src = value.url;
     img.alt = 'image';
     img.className = 'img';
-    imageWrapper.append(img);
+    imageWrapper.appendChild(img);
   }
 }
 makeImg(images);
 
-
+searchButton.addEventListener('click', () => {
+  console.log('Писюны');
+})

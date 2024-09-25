@@ -44,6 +44,7 @@ header {
 }
 .searchForm button {
   width: 40px;
+  height: 100%;
   border: none;
   background: chocolate;
   border-radius: 0 5px 5px 0;
@@ -57,7 +58,7 @@ header {
   color: #F9F0DA;
 }
 
-form {
+.searchForm {
   display: flex;
 }
 
