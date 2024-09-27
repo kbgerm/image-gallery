@@ -32,19 +32,19 @@ header {
   color: white;
 }
 
-.searchForm {
-  background: #A3D0C3;
+form {
+  display: flex;
 }
 
 .searchForm input {
   width: 200px;
   height: 32px;
   padding-left: 10px;
-  border: 2px solid #7BA7AB;
-  border-radius: 5px;
-  outline: auto;
+  border: 2px solid chocolate;
+  border-radius: 5px 0 0 5px;
+  outline: black;
   background: white;
-  color: #9E9C9C;
+  /* color: #9E9C9C; */
 }
 
 .searchForm button {
@@ -54,7 +54,6 @@ header {
   background: chocolate;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  outline: auto;
 }
 
 .searchForm button:before {
@@ -75,7 +74,7 @@ main {
 
 .imageWrapper {
   height: 100%;
-  width: fit-content;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
