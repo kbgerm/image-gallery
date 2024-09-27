@@ -1,18 +1,11 @@
-const url = 'https://media.wired.com/photos/65382632fd3d190c7a1f5c68/16:9/w_2400,h_1350,c_limit/Google-Image-Search-news-Gear-GettyImages-824179306.jpg';
 const imageWrapper = document.querySelector('.imageWrapper');
 const searchButton = document.querySelector('.searchButton');
 const form = document.querySelector('form');
 const input = document.querySelector('#form');
+const prestige = imageWrapper.querySelector('#prestige');
 
 let images = [];
 let userRequest;
-
-searchButton.addEventListener('click', () => {
-  getData().then(function () {
-    makeImg();
-  });
-})
-
 
 async function getData() {
   let params = new URLSearchParams(
@@ -34,14 +27,31 @@ function makeImg() {
     img.src = value.urls.regular;
     img.alt = 'image';
     img.className = 'img';
+    img.id = 'prestige';
     imageWrapper.appendChild(img);
   }
 }
-
-
 // Form
 
 form.addEventListener('submit', e => {
   e.preventDefault();
   userRequest = input.value;
+
+  while (imageWrapper.firstChild) {
+    imageWrapper.removeChild(imageWrapper.firstChild);
+  }
+
+  getData().then(function () {
+    makeImg();
+  });
 });
+
+// Loaded page 
+
+document.addEventListener('DOMContentLoaded', start);
+
+function start() {
+  getData().then(function () {
+    makeImg();
+  });
+}
